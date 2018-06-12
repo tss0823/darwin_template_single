@@ -10,14 +10,9 @@
     </plugins> -->
     <typeAliases>
         #foreach($entity in $!entityBoList)
-        <typeAlias alias="$!{entity.upperEntityEnName}" type="${packageName}.model.domain.${entity.upperEntityEnName}"/>
+        <typeAlias alias="$!{entity.upperEntityEnName}" type="${packageName}.dal.domain.${entity.upperEntityEnName}"/>
         #end
     </typeAliases>
 
-    <mappers>
-        #foreach($entity in $!entityBoList)
-        <mapper resource="mapper/$!{entity.upperEntityEnName}Mapper.xml"/>
-        #end
-    </mappers>
 
 </configuration>

@@ -5,24 +5,27 @@
  * 
  */
 
-package ${packageName}.model.domain;
-import com.yuntao.platform.common.annotation.ModelFieldComment;
+package ${packageName}.dal.domain;
+import ${packageName}.common.constants.ModelFieldComment;
 
 import java.io.Serializable;
 import java.util.Date;
 
+import ${packageName}.common.domain.BaseDomain;
+
+import java.util.Date;
+
 /**
- * ${entityCnName}
- * @author ${author}
- *
- * @${time}
+ * @author: ${author}
+ * @date: ${time}
+ * ${entityCnName}实体
  */
-public class ${upperEntityEnName} implements Serializable {
+public class ${upperEntityEnName} extends BaseDomain {
     
     private static final long serialVersionUID = 1L;
     
     #foreach($item in $!bo.propList)
-@ModelFieldComment(value = "$!{item.cnName}")
+@ModelFieldComment(value = "$!{item.cnName}"#if("$!item.length"!=""), maxLength = $!{item.length}#end #if("$!item.isNull"=="true"), required = false#end)
     private $!{item.dataType} $!{item.enName};
         
     #end
