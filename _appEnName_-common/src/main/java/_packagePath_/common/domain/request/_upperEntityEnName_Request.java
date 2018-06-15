@@ -6,7 +6,7 @@
  */
 
 package ${packageName}.common.domain.request;
-
+import ${packageName}.common.constants.ModelFieldComment;
 import java.util.Date;
 
 /**
@@ -19,6 +19,7 @@ public class ${upperEntityEnName}Request extends BaseRequest  {
     private static final long serialVersionUID = 1L;
     
     #foreach($item in $!bo.propList)
+@ModelFieldComment(value = "$!{item.cnName}"#if("$!item.length"!=""), maxLength = $!{item.length}#end #if("$!item.isNull"=="true"), required = false#end)
 private $!{item.dataType} $!{item.enName};
         
     #end

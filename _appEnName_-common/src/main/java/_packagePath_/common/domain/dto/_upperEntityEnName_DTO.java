@@ -6,7 +6,7 @@
  */
 
 package ${packageName}.common.domain.dto;
-
+import ${packageName}.common.constants.ModelFieldComment;
 import ${packageName}.common.domain.BaseDomain;
 
 import java.util.Date;
@@ -21,6 +21,7 @@ public class ${upperEntityEnName}DTO extends BaseDomain {
     private static final long serialVersionUID = 1L;
     
     #foreach($item in $!bo.propList)
+@ModelFieldComment(value = "$!{item.cnName}"#if("$!item.length"!=""), maxLength = $!{item.length}#end #if("$!item.isNull"=="true"), required = false#end)
 private $!{item.dataType} $!{item.enName};
         
     #end
