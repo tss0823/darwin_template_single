@@ -22,7 +22,7 @@ import java.util.List;
  */
 @Service("${entityEnName}Service")
 @JrpcService
-public class ${upperEntityEnName}ServiceImpl implements ${upperEntityEnName}Service {
+public class ${upperEntityEnName}ServiceImpl  extends AbstServic implements ${upperEntityEnName}Service {
 
     @Autowired
     private ${upperEntityEnName}Manager ${entityEnName}Manager;
