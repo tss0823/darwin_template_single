@@ -51,7 +51,7 @@
         </if>
     </select>
 
-    <select id="selectListCount" parameterType="Map" resultType="java.lang.Long">
+    <select id="selectListCount" parameterType="Map" resultType="java.lang.Integer">
         SELECT count(*) from <include refid="Base_Table_Name"/>
         <where>
             <include refid="Base_Where"/>
