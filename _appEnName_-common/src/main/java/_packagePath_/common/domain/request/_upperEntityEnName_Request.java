@@ -20,7 +20,7 @@ public class ${upperEntityEnName}Request extends BaseRequest  {
     
     #foreach($item in $!bo.propList)
 @ModelFieldComment(value = "$!{item.cnName}"#if("$!item.length"!=""), maxLength = $!{item.length}#end #if("$!item.isNull"=="true"), required = false#end)
-private $!{item.dataType} $!{item.enName};
+    private $!{item.dataType} $!{item.enName};
         
     #end
 
