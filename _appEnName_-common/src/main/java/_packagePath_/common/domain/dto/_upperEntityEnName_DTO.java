@@ -7,6 +7,7 @@
 
 package ${packageName}.common.domain.dto;
 import ${packageName}.common.constants.ModelFieldComment;
+import ${packageName}.common.constants.ModelComment;
 import ${packageName}.common.domain.BaseDomain;
 
 import java.util.Date;
@@ -16,6 +17,7 @@ import java.util.Date;
  * @date: ${time}
  * ${entityCnName}DTO
  */
+@ModelComment("${entityCnName}传输对象")
 public class ${upperEntityEnName}DTO extends BaseDomain {
     
     private static final long serialVersionUID = 1L;

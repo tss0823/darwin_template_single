@@ -7,6 +7,7 @@
 
 package ${packageName}.dal.domain;
 import ${packageName}.common.constants.ModelFieldComment;
+import ${packageName}.common.constants.ModelComment;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -20,6 +21,7 @@ import java.util.Date;
  * @date: ${time}
  * ${entityCnName}实体
  */
+@ModelComment("${entityCnName}实体")
 public class ${upperEntityEnName} extends BaseDomain {
     
     private static final long serialVersionUID = 1L;

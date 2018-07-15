@@ -9,7 +9,6 @@ import ${packageName}.dal.mapper.${upperEntityEnName}Mapper;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Map;
@@ -74,7 +73,6 @@ public class ${upperEntityEnName}DaoImpl implements ${upperEntityEnName}Dao {
         return ${entityEnName}Mapper.deleteById(id);
     }
 
-    @Transactional
     @Override
     public int insertBatch(List<${upperEntityEnName}> dataList) {
         return ${entityEnName}Mapper.insertBatch(dataList);

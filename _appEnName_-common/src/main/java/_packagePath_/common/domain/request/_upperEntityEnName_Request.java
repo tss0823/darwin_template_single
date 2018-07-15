@@ -7,6 +7,7 @@
 
 package ${packageName}.common.domain.request;
 import ${packageName}.common.constants.ModelFieldComment;
+import ${packageName}.common.constants.ModelComment;
 import java.util.Date;
 
 /**
@@ -14,6 +15,7 @@ import java.util.Date;
  * @author: ${author}
  * ${entityCnName}Request
  */
+@ModelComment("${entityCnName}请求对象")
 public class ${upperEntityEnName}Request extends BaseRequest  {
     
     private static final long serialVersionUID = 1L;
