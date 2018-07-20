@@ -13,9 +13,9 @@ import java.util.Date;
 /**
  * @date: ${time}
  * @author: ${author}
- * ${entityCnName}Request
+ * ${entityCnName}Request请求对象
  */
-@ModelComment("${entityCnName}请求对象")
+@ModelComment("${entityCnName}")
 public class ${upperEntityEnName}Request extends BaseRequest  {
     
     private static final long serialVersionUID = 1L;

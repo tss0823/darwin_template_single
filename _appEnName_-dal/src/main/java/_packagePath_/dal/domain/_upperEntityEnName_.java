@@ -21,7 +21,7 @@ import java.util.Date;
  * @date: ${time}
  * ${entityCnName}实体
  */
-@ModelComment("${entityCnName}实体")
+@ModelComment("${entityCnName}")
 public class ${upperEntityEnName} extends BaseDomain {
     
     private static final long serialVersionUID = 1L;

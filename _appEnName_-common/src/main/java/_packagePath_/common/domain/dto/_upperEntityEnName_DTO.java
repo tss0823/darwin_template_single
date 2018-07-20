@@ -15,9 +15,9 @@ import java.util.Date;
 /**
  * @author: ${author}
  * @date: ${time}
- * ${entityCnName}DTO
+ * ${entityCnName}DTO传输对象
  */
-@ModelComment("${entityCnName}传输对象")
+@ModelComment("${entityCnName}")
 public class ${upperEntityEnName}DTO extends BaseDomain {
     
     private static final long serialVersionUID = 1L;
